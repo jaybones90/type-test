@@ -1,28 +1,51 @@
 # TypeTest
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
+This is a web application that is a typing test for programmers to test their keyboard skills. It allows the user to create new player and then select a language to practice. The program returns your score for characters per minute and shows you which keys you missed and how many times you missed that key. It also uses the D3 Javascript library to generate cool graphics based on correct/incorrect keystrokes.
 
-## Development server
+* View live app deployed on Firebase: https://typing-test-f658d.firebaseapp.com/
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+### Setup/Install Requirements
 
-## Code scaffolding
+* Make sure you have the [Angular CLI](https://github.com/angular/angular-cli) installed
+* Create a [Firebase](https://firebase.google.com/) account and then a new Firebase project and seed it with the seed-data.json file within this projects root folder.
+* Create an 'api-keys.ts' file within src/app and copy in the intialize Firebase code from your newly created project in Firebase. Then change 'var config' to 'export var masterFirebaseConfig'
+* Make sure this code is in the app.module.ts file within app/src -
+ ```javascript
+import { masterFirebaseConfig } from './api-keys';
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
+export const firebaseConfig = {
+  apiKey: masterFirebaseConfig.apiKey,
+  authDomain: masterFirebaseConfig.authDomain,
+  databaseURL: masterFirebaseConfig.databaseURL,
+  storageBucket: masterFirebaseConfig.storageBucket
+};
+```
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive/pipe/service/class/module`.
+Run these following commands in the terminal to install dependencies
+* `bower install`
+* `npm install`
 
-## Build
+Run this command to build in development mode
+* `ng build`
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+Run this command to launch the server
+* `ng serve`
 
-## Running unit tests
+### Known Bugs
+* No known bugs. Please submit a pull request, leave a comment, or email with any discovered bugs.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Technologies Used
+* Angular
+* Typescript
+* Firebase
+* npm
+* bower
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+### By Authors
+Jason Ainsworth
+### Support and contact details
+jasoncruze@gmail.com
+### License
+_MIT_
+Copyright (c) 2017 **Jason Ainsworth**
