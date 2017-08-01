@@ -31,6 +31,7 @@ Run this command to build in development mode
 
 Run this command to launch the server
 * `ng serve`
+* navigate to 'localhost:4200' in the browser 
 
 ### Known Bugs
 * No known bugs. Please submit a pull request, leave a comment, or email with any discovered bugs.
@@ -43,9 +44,20 @@ Run this command to launch the server
 * bower
 
 ### By Authors
-Jason Ainsworth
+* Jason Ainsworth
+* Kai de Rochemont
+* Monique St. Laurent
+* Mohamed J Warsame
+
 ### Support and contact details
 jasoncruze@gmail.com
+
 ### License
 _MIT_
-Copyright (c) 2017 **Jason Ainsworth**
+Copyright (c) Jason Ainsworth, Kai deRochemont, Monique St. Laurent, Mohamed J Warsame
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
